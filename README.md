@@ -22,7 +22,7 @@ A fully functional and responsive React To-Do List application built as part of 
 ![App Screenshot](./screenshot.png)
 
 ## 📂 Installation & Running Locally
-
+```bash
 git clone https://github.com/Samarth-Shekhar/Todo-List-app-React-js.git
 cd Todo-List-app-React-js
 npm install
@@ -40,6 +40,6 @@ src/
 ├── App.js
 ├── App.css
 └── index.js
-
+```
 ## 🤝 Contribution
 This project was built for internship submission. Contributions are welcome for improvements.
