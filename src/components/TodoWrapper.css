@@ -1,0 +1,116 @@
+.TodoWrapper {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff6f91, #845ec2, #00c9a7, #ff9671);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.TodoWrapper h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Buttons container */
+.TodoWrapper > div:nth-child(2),
+.TodoWrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+button {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: none;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.55);
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: default;
+  color: #ddd;
+  box-shadow: none;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.todo-list li {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 12px;
+  padding: 1rem 1.2rem;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.15rem;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.todo-list li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+  color: #d1c4e9cc;
+  font-style: italic;
+}
+
+/* Delete button inside li */
+.todo-list li button {
+  background-color: #ff1744;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px #ff1744aa;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list li button:hover {
+  background-color: #ff4569;
+  box-shadow: 0 5px 18px #ff4569cc;
+}
