@@ -41,5 +41,6 @@ src/
 ├── App.js
 ├── App.css
 └── index.js
-🤝 Contribution
+
+##🤝 Contribution
 This project was built for internship submission. Contributions are welcome for improvements.
