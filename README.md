@@ -23,7 +23,6 @@ A fully functional and responsive React To-Do List application built as part of 
 
 ## 📂 Installation & Running Locally
 
-```bash
 git clone https://github.com/Samarth-Shekhar/Todo-List-app-React-js.git
 cd Todo-List-app-React-js
 npm install
